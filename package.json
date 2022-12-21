@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "dev": "nodemon",
-    "build": "nixpacks build"
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
   },
   "keywords": [],
   "author": {
