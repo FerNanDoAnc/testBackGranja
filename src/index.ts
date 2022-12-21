@@ -1,11 +1,11 @@
-import 'reflect-metadata';
+// import 'reflect-metadata';
 import { createConnection, getRepository } from 'typeorm';
-import * as express from 'express';
-import * as cors from 'cors';
-import * as helmet from 'helmet';
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
 import routes from './routes';
  
-import * as http from 'http';
+import http from 'http';
 import {SerialPort} from 'serialport';
 import {ReadlineParser} from '@serialport/parser-readline';
 
