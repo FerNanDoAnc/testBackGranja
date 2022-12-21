@@ -1,6 +1,8 @@
 {
     "rewrites": [{
-         "source": "/(.*)",
-          "destination": "index.ts" 
-    }]
+         "source": "/(.*)"
+    }],
+    "scripts": {
+        "vercel-build": "node ./index.ts"
+    }
 }
