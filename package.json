@@ -1,48 +1,29 @@
 {
-  "name": "login_roles",
-  "version": "0.0.1",
-  "description": "Granja con arduino",
+  "name": "todo-express-api",
+  "version": "1.0.0",
+  "description": "Simple REST API using Node.js | Typescript, Express.js, TypeORM",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Ivan Zaldivar",
+    "url": "https://github.com/thebug404"
+  },
+  "license": "ISC",
   "devDependencies": {
-    "@types/bcryptjs": "^2.4.2",
-    "@types/cors": "^2.8.6",
-    "@types/express": "^4.17.7",
-    "@types/jsonwebtoken": "^8.5.0",
-    "@types/node": "^8.10.66",
-    "ts-node-dev": "^1.0.0-pre.51",
-    "tsconfig-paths": "^4.1.0",
-    "typescript": "^3.9.6"
+    "@types/express": "^4.17.13",
+    "@types/http-errors": "^1.8.2",
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "class-validator": "^0.11.1",
-    "cors": "^2.8.5",
-    "express": "^4.15.4",
-    "helmet": "^3.23.3",
-    "jsonwebtoken": "^8.5.1",
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0",
     "mysql": "^2.18.1",
-    "mysql2": "^2.3.3",
-    "node-cron": "^3.0.1",
-    "node-schedule": "^2.1.0",
-    "reflect-metadata": "^0.1.10",
-    "serialport": "^10.4.0",
-    "socket.io": "^4.5.1",
-    "ts-node": "^8.10.2",
-    "typeorm": "^0.2.25",
-    "uuid": "^8.3.2"
-  },
-  "scripts": {
-    "start:prod": "node build/server.js",
-    "prepare": "npm run tsc",
-    "start": "node src/index.ts",
-    "tsc": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
-    "devDeInternet": "set debug=* && ts-node-dev --respawn --transpile-only ./src/index.ts",
-    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "migrations:generate": "npm run typeorm -- migration:generate -n",
-    "migrations:run": "npm run typeorm -- migration:run",
-    "typeormuno": "ts-node ./node_modules/typeorm/cli -f ./ormconfig.json",
-    "typeormdos": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js --config ./src/ormconfig.ts",
-    "typeorm:migration": "npm run typeorm migration:generate -- -n",
-    "typeorm:run": "npm run typeorm migration:run"
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.4"
   }
 }
