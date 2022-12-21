@@ -36,8 +36,6 @@
     "build": "tsc --build",
     "clean": "tsc --build --clean",    
 
- 
-    "tsc": "tsc", 
     "devDeInternet": "set debug=* && ts-node-dev --respawn --transpile-only ./src/index.ts",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "migrations:generate": "npm run typeorm -- migration:generate -n",
