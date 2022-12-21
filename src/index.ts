@@ -17,6 +17,6 @@ database.initialize()
 
 app.use('/api', TaskRoutes);
 
-app.listen(3030, ()=> {
+app.listen(3000, ()=> {
   console.log("App execute in port:3030");
 });
