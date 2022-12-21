@@ -10,7 +10,7 @@
     "@types/node": "^8.10.66",
     "ts-node-dev": "^1.0.0-pre.51",
     "tsconfig-paths": "^4.1.0",
-    "typescript": "^3.9.10"
+    "typescript": "^3.9.6"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -31,12 +31,9 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "node dist/index.js", 
-    "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
-
-
-    "build": "tsc --build",
-    "clean": "tsc --build --clean",
+    "start": "node src/index.ts",
+    "tsc": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "devDeInternet": "set debug=* && ts-node-dev --respawn --transpile-only ./src/index.ts",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
     "migrations:generate": "npm run typeorm -- migration:generate -n",
