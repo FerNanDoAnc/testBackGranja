@@ -9,8 +9,6 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    
-    "baseUrl":".",
-    "esModuleInterop": true
+     
   }
 }
