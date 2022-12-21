@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build && node dist/index.js",
     "dev": "nodemon",
-    "build": "nixpacks build --tsconfig tsconfig.json --outDir dist  --entry index.ts --watch --clean"
+    "build": "nixpacks build"
   },
   "keywords": [],
   "author": {
