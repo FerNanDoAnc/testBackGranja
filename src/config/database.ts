@@ -4,11 +4,11 @@ import { Task } from "../entity/Task";
 
 export default new DataSource({ 
   type: 'mysql',
-  host: 'localhost',
-  port: 3306,
-  username: 'root',
-  password: '1234',
-  database: 'todo',
+  host: 'containers-us-west-182.railway.app',
+  port: 7173,
+  username: 'root', 
+  password: '7hdwaY7J4MXtpueO7Ewn',
+  database: 'railway',
   entities: [Task],
   synchronize: true,
   logging: false
