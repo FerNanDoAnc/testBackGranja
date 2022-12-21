@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["es5", "es6"],
-    "target": "ESNEXT",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "./dist",
@@ -9,6 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-     
+    "baseUrl":".",
+    "esModuleInterop": true
   }
 }
