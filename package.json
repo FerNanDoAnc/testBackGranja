@@ -30,7 +30,7 @@
     "typeorm": "^0.2.25",
     "uuid": "^8.3.2"
   },
-  "scripts": { 
+  "scripts": {
     "start": "npm run build && node dist/index.js",
     "tsc": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
