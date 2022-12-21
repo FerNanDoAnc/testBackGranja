@@ -1,4 +1,4 @@
-// import 'reflect-metadata';
+import 'reflect-metadata';
 import { createConnection, getRepository } from 'typeorm';
 import express from 'express';
 import cors from 'cors';
