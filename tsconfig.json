@@ -8,8 +8,6 @@
     "rootDir": "./src",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
-    "baseUrl":".",
-    "esModuleInterop": true
+    "sourceMap": true
   }
 }
