@@ -1,6 +1,6 @@
 import 'reflect-metadata'; 
-import * as express from 'express';
-import * as cors from 'cors';
+import express from 'express';
+import cors from 'cors';
 import * as helmet from 'helmet';
 import routes from '../routes';
 import * as http from 'http';
