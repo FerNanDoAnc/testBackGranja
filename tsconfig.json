@@ -1,17 +1,30 @@
 {
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
+    "target": "esnext", 
     "module": "commonjs",
-    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
-    "outDir": "dist",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["node_modules/*"]
-    },
-    "target": "ES2019",
-    "moduleResolution": "node"
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,  
+
   },
   "include": [
-    "src/**/*"
+    "src",
+    "src/**/*",
+    "scripts/**/*"
+  ],
+  "entities": [
+    "dist/**/*.entity{.ts,.js}", 
   ]
 }
