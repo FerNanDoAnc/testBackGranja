@@ -1,7 +1,6 @@
 {
-  "compilerOptions": {
-    "lib": ["es5", "es6"],
-    "target": "es5",
+  "compilerOptions": { 
+    "target": "es2018",
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "./dist",
@@ -10,6 +9,9 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,         
+    "esModuleInterop": true,
+                                   /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true,       
+
   }
 }
