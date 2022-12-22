@@ -35,7 +35,7 @@
   "scripts": {
     "start": "npm run build && node build/index.js",
     "dev": "nodemon", 
-    "build": "rimraf ./build && tsc",
+    "build": "tsc",
     "clean": "tsc --build --clean",
     "devDeInternet": "set debug=* && ts-node-dev --respawn --transpile-only ./src/index.ts",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
