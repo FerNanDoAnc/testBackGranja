@@ -16,9 +16,13 @@ export class TareaController{
         try {
             tareas = await tareaRepository.find({relations: ["id_arduino","id_user"]});
             // tareas = await tareaRepository.find({ select: ['id', 'nombre', 'fecha', 'estado'] });
-            tareas.sort(function(a, b) {
-                return a.indice - b.indice;
-            });
+            try {
+                tareas.sort(function(a, b) {
+                    return a.indice - b.indice;
+                });
+            } catch (error) {
+                console.log(error)
+            }
         } catch (e) {
             res.status(404).json({ message: 'Algo salió mal' });
         }
@@ -47,9 +51,13 @@ export class TareaController{
             });
             // tareas = await tareaRepository.find({ select: ['id', 'nombre', 'fecha', 'estado'] });
             // ordenar por indice
-            tareas.sort(function(a, b) {
-                return a.indice - b.indice;
-            });
+            try {
+                tareas.sort(function(a, b) {
+                    return a.indice - b.indice;
+                });
+            } catch (error) {
+                console.log(error)
+            }
         } catch (e) {
             res.status(404).json({ ok:false,message: 'Algo salió mal' });
         }
@@ -76,9 +84,13 @@ export class TareaController{
                 },
                 relations: ['id_arduino','id_user']
             });
-            tareas.sort(function(a, b) {
-                return a.indice - b.indice;
-            });
+            try {
+                tareas.sort(function(a, b) {
+                    return a.indice - b.indice;
+                });
+            } catch (error) {
+                console.log(error)
+            }
         } catch (error) {
             res.status(404).json({ message: 'No existe la tarea con ese id' });
             console.log(error)
@@ -242,10 +254,13 @@ export class TareaController{
                     }
                 });
             }); 
-
-            tarea.sort(function(a, b) {
-                return a.indice - b.indice;
-            });
+            try {
+                tarea.sort(function(a, b) {
+                    return a.indice - b.indice;
+                });
+            } catch (error) {
+                console.log(error)
+            }
 
             res.status(200).json({
                 ok: true,
