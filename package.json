@@ -13,6 +13,7 @@
     "typescript": "^3.9.6"
   },
   "dependencies": {
+    "@types/express-serve-static-core": "^4.17.20",
     "bcryptjs": "^2.4.3",
     "class-validator": "^0.11.1",
     "cors": "^2.8.5",
