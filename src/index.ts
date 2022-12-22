@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { createConnection, getRepository } from 'typeorm';
-import * as express from 'express';
-import * as cors from 'cors';
+import express from 'express';
+import cors from 'cors';
 import * as helmet from 'helmet';
 import routes from './routes';
  
