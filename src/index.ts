@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import { createConnection, getRepository } from 'typeorm';
-import * as express from 'express';
-import * as cors from 'cors';
+import express from 'express';
+import cors from 'cors';
 import * as helmet from 'helmet';
 import routes from './routes';
  
@@ -17,7 +17,7 @@ import { descripArdTarea } from './entity/descripArdTarea';
 const schedule = require('node-schedule');
 const cron = require('node-cron');
 
-const PORT = process.env.PORT || 3000;  
+const PORT = process.env.PORT || 30
 
 createConnection()
   .then(async () => {
