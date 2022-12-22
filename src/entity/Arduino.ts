@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToMany, JoinTable, UpdateDateColumn, OneToOne, JoinColumn, ManyToOne } from 'typeorm';
+// import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToMany, JoinTable, UpdateDateColumn, OneToOne, JoinColumn, ManyToOne } from 'typeorm';
+const { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, ManyToMany, JoinTable, UpdateDateColumn, OneToOne, JoinColumn, ManyToOne } = require('typeorm');
 import { MinLength, IsNotEmpty } from 'class-validator';
 import {Users} from '../entity/Users';
 import { Tarea } from './Tareas';
