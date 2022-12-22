@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["es5", "es6"],
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "./dist",
@@ -17,5 +17,8 @@
   "include": [
     "src/**/*",
     "scripts/**/*"
+  ],
+  "entities": [
+    "dist/**/*.entity{.ts,.js}"
   ]
 }
