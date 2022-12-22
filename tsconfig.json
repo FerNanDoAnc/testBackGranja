@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "noImplicitAny": false,
-    "noEmitOnError": true,
-    "removeComments": false,
-    "sourceMap": true,
+    "lib": ["es5", "es6"],
     "target": "es5",
-    "outDir": "dist"  
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    // "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,       
 
   },
   "include": [
