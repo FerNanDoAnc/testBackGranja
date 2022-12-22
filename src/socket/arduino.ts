@@ -1,9 +1,9 @@
 import 'reflect-metadata'; 
 import express from 'express';
 import cors from 'cors';
-import * as helmet from 'helmet';
+import helmet from 'helmet';
 import routes from '../routes';
-import * as http from 'http';
+import http from 'http';
 
 import { createConnection, getRepository } from 'typeorm';
 import { Arduino } from '../entity/Arduino';

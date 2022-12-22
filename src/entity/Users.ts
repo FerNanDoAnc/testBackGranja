@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Unique, Column, CreateDateColumn, ManyToMany, UpdateDateColumn } from 'typeorm';
 import { MinLength, IsNotEmpty, IsEmail } from 'class-validator';
-import * as bcrypt from 'bcryptjs';
+import bcrypt from 'bcryptjs';
 import { Arduino } from './Arduino';
 import { Tarea } from './Tareas';
 
