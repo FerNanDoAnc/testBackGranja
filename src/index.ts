@@ -17,7 +17,7 @@ import { descripArdTarea } from './entity/descripArdTarea';
 const schedule = require('node-schedule');
 const cron = require('node-cron');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;  
 
 createConnection()
   .then(async () => {
