@@ -32,7 +32,7 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
-    "start": "node src/index.ts", 
+    "start": "npm run build && node dist/index.js",
     "build": "tsc --build",
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "devDeInternet": "set debug=* && ts-node-dev --respawn --transpile-only ./src/index.ts",

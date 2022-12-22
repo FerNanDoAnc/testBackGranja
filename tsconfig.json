@@ -1,6 +1,7 @@
 {
-  "compilerOptions": { 
-    "target": "es2018",
+  "compilerOptions": {
+    "lib": ["es5", "es6"],
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "./dist",
@@ -9,8 +10,8 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "skipLibCheck": true,
-    // "esModuleInterop": true, 
-    // "forceConsistentCasingInFileNames": true,       
+    "esModuleInterop": true,
+    //  "forceConsistentCasingInFileNames": true,       
 
   }
 }
