@@ -19,7 +19,7 @@
     "scripts/**/*"
   ],
   "entities": [
-    // "dist/**/*.entity{.ts,.js}",
-    "dist/db/entity/**/*.js", 
+    // "dist/**/*.entity{.ts,.js}", 
+    "dist/**/entity/**/*.js", 
   ]
 }
