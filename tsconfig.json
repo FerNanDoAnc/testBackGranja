@@ -24,8 +24,5 @@
     "src/**/*",
     "scripts/**/*"
   ],
-  "entities": [
-    "dist/**/*.entity{.ts,.js}", 
-  ],
   "exclude": ["node_modules"]
 }
