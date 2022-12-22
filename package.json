@@ -32,7 +32,7 @@
   },
   "scripts": {
     "start": "node src/index.ts",
-    "build": "tsc --build", 
+    "build": "tsc -p .",
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "devDeInternet": "set debug=* && ts-node-dev --respawn --transpile-only ./src/index.ts",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
