@@ -10,7 +10,7 @@
     "@types/node": "^18.11.17",
     "ts-node-dev": "^1.0.0-pre.51",
     "tsconfig-paths": "^4.1.0",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.10"
   },
   "dependencies": {
     "@types/express-serve-static-core": "^4.17.20",
